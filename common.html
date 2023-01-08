@@ -13,7 +13,7 @@
     <script src="js/slick.min.js"></script>
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
-    <title>- design CHESS - Nari's about</title>
+    <title>- design CHESS - Nari shin</title>
 </head>
 <body>
     <div class="cursor"></div>
@@ -21,13 +21,20 @@
         <header>
             <div class="headerMenu">
                 <!-- 헤더메뉴 -->
-                <div class="nav-link"><a href="#">Index</a></div>
+                <div id="trigger" class="nav-link"><a href="#">Index</a></div>
                 <a href="index.html" class="brand">
                     <h1><div class="logo">design<br/>CHESS</div></h1>
                 </a>
                 <div data-w-id="8b042cb9-2dbe-2bd0-51a0-ee58dc30b4fe" class="nav-link"><a href="#">Work</a></div>
             </div>
         </header>
+        <nav>
+            <p class="btn"><a href="about.html">about</a></p>
+            <p class="btn"><a href="index.html">works</a></p>
+            <p class="btn"><a href="others.html">others</a></p>
+            <p class="btn"><a href="contact.html">contact</a></p>
+            <div><img src="img/logoC.png" alt="logo"></div>
+        </nav>
 
         <div id="btn_up">
             <a href="index.html"><button><img src="img/btnUp.svg" alt="up"></button></a>
@@ -103,6 +110,18 @@
         });
 
     </script>
+    <!-- 인덱스 -->
+<script>
+    $(function(){
+    let trigger = $('#trigger');
+    let menu = $('nav');
+
+    $('#trigger').on('click',function(e){
+        e.preventDefault();
+        menu.slideToggle();
+    });
+    });
+</script>
 
     </script>
     <!-- 애니메이션 소스 -->

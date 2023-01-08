@@ -99,6 +99,34 @@ div[class=detail], div[class=detail]>a {
     animation: none;
 }
 
+#trigger::after {
+    content: '';
+    position: relative;
+}
+nav {
+    padding: 20px 0 0 1.2vw;
+    width: 30vw;
+    min-width: 300px;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    left:0; top: 85px;
+    /* background: #fff; */
+}
+nav img {
+    margin-top: 2vw;
+    animation: rotate 10s linear infinite;
+}
+.btn {
+    display: block;
+    width: 80px;
+    padding: 5px 0;
+    margin: 10px auto;
+}
+.btn:hover {
+    border-bottom : 1px solid #5c7547;
+}
+
 /* 헤더영역 */
 header {
     width: 100vw;
@@ -141,6 +169,7 @@ header .nav-link {
     border-radius: 50%;
 }
 
+/* 워크메뉴 */
 .flex-columns a, .flex-columns div {
     color: #f8d5b8;
 }
@@ -176,6 +205,7 @@ main .sect {
 }
 main .detail {
     width: 45vw;
+    max-width: 500px;
     text-align: left;
     margin-left: 14vw;
     grid-row: 2/3;
@@ -287,7 +317,7 @@ main .detail button:last-of-type {
     width: 400px;
     mix-blend-mode :luminosity;
     /* text-align: justify; */
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   .top-bubble .detail:last-of-type {
     padding-top: 2vw;
@@ -543,7 +573,11 @@ footer {
         transform: scale(.9);
     }
 }
-
+@keyframes rotate {
+    to {
+        rotate: 360deg;
+    }
+}
 
 
     /* Max Font Size */
@@ -562,12 +596,22 @@ footer {
         font-size: 8vw;
         margin-top: 5vw;
     }
+    /* .bg-call {
+        padding-top: 80vh;
+        z-index: -10;
+        height: 120vh;
+    }
+    #contact {
+        margin-top: 1500px;
+        z-index: 999;
+    } */
 
 @media screen and (max-width:700px) {
 
     .top-bubble {
         background: url(../img/chessimggr_bg2.jpg) no-repeat center;
         background-size: contain;
+        height: 1800px;
     }
 
     /* 워크 */
@@ -589,11 +633,11 @@ footer {
     .bg-call {
         z-index: -10;
         padding-top: 1000px;
-        height: 180vh;
+        /* height: 180vh; */
     }
     
     #contact {
-        /* margin-top: 500px; */
+        margin-top: 1000px;
         z-index: 999;
     }
     
@@ -673,7 +717,7 @@ footer {
         .bg-call {
             padding-top: 80vh;
             z-index: -10;
-            /* height: 90vh; */
+            height: 150vh;
         }
         
         #contact {

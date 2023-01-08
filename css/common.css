@@ -108,6 +108,31 @@ header .nav-link {
     line-height: 4em;
 }
 
+nav {
+    padding: 20px 0 0 1.2vw;
+    width: 30vw;
+    min-width: 300px;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    left:0; top: 85px;
+    z-index: 999;
+    /* background: #fff; */
+}
+nav img {
+    margin-top: 2vw;
+    animation: rotate 10s linear infinite;
+}
+.btn {
+    display: block;
+    width: 80px;
+    padding: 5px 0;
+    margin: 10px auto;
+}
+.btn:hover {
+    border-bottom : 1px solid #5c7547;
+}
+
 
 /* 상시 위로가기 */
 #btn_up {
@@ -121,10 +146,23 @@ header .nav-link {
     border-radius: 50%;
 }
 
-.flex-columns a {
+
+/* 워크메뉴 */
+.flex-columns a, .flex-columns div {
     color: #f8d5b8;
 }
+.flex-columns .subContact {
+    padding-top: 30px;
+}
 
+.flex-columns .logo {
+    color: #f8d5b8;
+    border: 1px solid #f8d5b8;
+    padding: 20px 0;
+    width: 100px;
+    margin: 0 50vw;
+    
+}
 
 
 
@@ -270,5 +308,11 @@ footer {
     }
     75% {
         transform: scale(.9);
+    }
+}
+
+@keyframes rotate {
+    to {
+        rotate: 360deg;
     }
 }

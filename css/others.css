@@ -37,9 +37,9 @@ body {
     text-align: center;
     z-index: 999;
     max-width: 800px;
-    mix-blend-mode: overlay;
+    /* mix-blend-mode: overlay; */
     pointer-events: none;
-    color: #fff;
+    color: #5c7547;
     position: fixed;
     top: 0;
     left: 0;
@@ -48,7 +48,13 @@ body {
     display: grid;
     place-items: center;
   }
-
+  nav {
+    background: #fff;
+    z-index: 999;
+  }
+  nav img {
+    width: 100px;
+  }
   #otherTitle button {
     display: inline;
   }
@@ -88,7 +94,7 @@ body {
   .image {
     width: 100%;
     filter: saturate(0);
-    padding: 1rem;
+    padding: 1vw 10vw;
   }
   
   .image:hover {

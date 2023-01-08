@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="Shortcut Icon" href="img/favicon.ico">
 
     <!-- 슬릭 -->
     <script src="js/slick.min.js"></script>
@@ -21,13 +22,20 @@
         <header>
             <div class="headerMenu">
                 <!-- 헤더메뉴 -->
-                <div class="nav-link"><a href="#">Index</a></div>
+                <div id="trigger" class="nav-link"><a href="#">Index</a></div>
                 <a href="index.html" class="brand">
                     <h1><div class="logo">design<br/>CHESS</div></h1>
                 </a>
                 <div data-w-id="8b042cb9-2dbe-2bd0-51a0-ee58dc30b4fe" class="nav-link"><a href="#">Work</a></div>
             </div>
         </header>
+        <nav>
+            <p class="btn"><a href="about.html">about</a></p>
+            <p class="btn"><a href="index.html">works</a></p>
+            <p class="btn"><a href="others.html">others</a></p>
+            <p class="btn"><a href="contact.html">contact</a></p>
+            <div><img src="img/logoC.png" alt="logo"></div>
+        </nav>
 
         <div id="btn_up">
             <a href="#main"><button><img src="img/btnUp.svg" alt="up"></button></a>
@@ -48,7 +56,7 @@
                 <a href="#" class="work-line w-inline-block"><div class="menu-item-txt">/Web</div></a>
                 <a href="#" class="work-line w-inline-block"><div class="menu-item-txt">/Mobile UX</div></a>
                 <a href="#" class="work-line w-inline-block"><div class="menu-item-txt">/Promo</div></a>
-                <a href="#" class="work-line w-inline-block"><div class="menu-item-txt">/others</div></a>
+                <a href="others.html" class="work-line w-inline-block"><div class="menu-item-txt">/others</div></a>
                 
                 <div class="subContact"></div>
                 <a href="#" target="_blank" class="link menu w-inline-block"><div>E-mail</div></a>
@@ -75,9 +83,9 @@
                 <div id="logoC"></div>
                 <p>
                     I'm a Web/Graphic designer based in Korea(Rep. of) & U.S.<br> 
-                    I majored in Media communication and international area studies <br> 
+                    I majored in media communication and international culture<br> 
                     and skilled in using Adobe and HTML. <br> 
-                    My main focus is on user-centered design.<br><br>
+                    My main focus is on user-centered design&#127808;<br><br>
                 </p>
                 <img src="img/items.png" alt="items">
                 <p>
@@ -85,7 +93,7 @@
                     • Planned media mix and designed banners & promotional pages<br>
                     • Designed marketing content on various social media channels<br>  
                     • Collaborated well with UX, marketing, and development<br>
-                    • Undertook feasibility studies on design options for marketing efficiency<br><br>
+                    • Undertook feasibility studies on design options for marketing efficiency<br><br><br>
                 </p>
                 <div class="skills">
                     <p><b>**SKILLS</b></p>
@@ -203,6 +211,18 @@
     ]
   });
     </script>
+    <!-- 인덱스 -->
+<script>
+    $(function(){
+    let trigger = $('#trigger');
+    let menu = $('nav');
+
+    $('#trigger').on('click',function(e){
+        e.preventDefault();
+        menu.slideToggle();
+    });
+    });
+</script>
     <!-- 애니메이션 소스 -->
     <script src="js/animation.js" type="text/javascript">
     </script>

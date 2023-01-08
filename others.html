@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="css/about.css"> -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/others.css">
+    <link rel="Shortcut Icon" href="img/favicon.ico">
 
     <!-- 슬릭 -->
     <script src="js/slick.min.js"></script>
@@ -22,13 +23,19 @@
         <header>
             <div class="headerMenu">
                 <!-- 헤더메뉴 -->
-                <div class="nav-link"><a href="#">Index</a></div>
+                <div id="trigger" class="nav-link"><a href="#">Index</a></div>
                 <a href="index.html" class="brand">
                     <h1><div class="logo">design<br/>CHESS</div></h1>
                 </a>
                 <div data-w-id="8b042cb9-2dbe-2bd0-51a0-ee58dc30b4fe" class="nav-link"><a href="#">Work</a></div>
             </div>
-        </header>
+        </header><nav>
+          <p class="btn"><a href="about.html">about</a></p>
+          <p class="btn"><a href="index.html">works</a></p>
+          <p class="btn"><a href="others.html">others</a></p>
+          <p class="btn"><a href="contact.html">contact</a></p>
+          <div><img src="img/logoC.png" alt="logo"></div>
+      </nav>
 
         <div id="btn_up">
             <a href="#"><button><img src="img/btnUp.svg" alt="up"></button></a>
@@ -75,36 +82,48 @@
           <div class="gallery">
             <div class="col">
               <div class="image">
-                <img src="https://images.pexels.com/photos/10324713/pexels-photo-10324713.jpeg?cs=srgb&dl=pexels-taha-samet-arslan-10324713.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col1_1.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/10533885/pexels-photo-10533885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col1_2.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/10253213/pexels-photo-10253213.jpeg?cs=srgb&dl=pexels-beepin-10253213.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col1_3.jpg" alt="">
+              </div>
+              <div class="image">
+                <img src="img/col1_4.jpg" alt="">
               </div>
             </div>
             <div class="col">
               <div class="image">
-                <img src="https://images.pexels.com/photos/10050979/pexels-photo-10050979.jpeg?cs=srgb&dl=pexels-%D0%B8%D0%BB%D1%8C%D1%8F-%D0%BF%D0%B0%D1%85%D0%BE%D0%BC%D0%BE%D0%B2-10050979.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col2_1.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/1128660/pexels-photo-1128660.jpeg?cs=srgb&dl=pexels-nur-andi-ravsanjani-gusma-1128660.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col2_2.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/9699293/pexels-photo-9699293.jpeg?cs=srgb&dl=pexels-lada-rezantseva-9699293.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col2_3.jpg" alt="">
+              </div>
+              <div class="image">
+                <img src="img/col2_4.jpg" alt="">
               </div>
             </div>
             <div class="col">
               <div class="image">
           
-                <img src="https://images.pexels.com/photos/6405575/pexels-photo-6405575.jpeg?cs=srgb&dl=pexels-daria-sannikova-6405575.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col3_1.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/10162526/pexels-photo-10162526.jpeg?cs=srgb&dl=pexels-svetlana%F0%9F%8E%9E-10162526.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col3_2.jpg" alt="">
               </div>
               <div class="image">
-                <img src="https://images.pexels.com/photos/4394807/pexels-photo-4394807.jpeg?cs=srgb&dl=pexels-woodysmedia-4394807.jpg&fm=jpg?auto=compress&cs=tinysrgb&h=650&w=940%20940w" alt="">
+                <img src="img/col3_3.jpg" alt="">
+              </div>
+              <div class="image">
+                <img src="img/col3_4.png" alt="">
+              </div>
+              <div class="image">
+                <img src="img/col3_5.jpg" alt="">
               </div>
             </div>
           </div>
@@ -215,7 +234,18 @@
         });
     </script>
 
-    </script>
+    <!-- 인덱스 -->
+<script>
+  $(function(){
+  let trigger = $('#trigger');
+  let menu = $('nav');
+
+  $('#trigger').on('click',function(e){
+      e.preventDefault();
+      menu.slideToggle();
+  });
+  });
+</script>
     <!-- 애니메이션 소스 -->
     <script src="js/animation.js" type="text/javascript">
     </script>
