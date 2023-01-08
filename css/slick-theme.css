@@ -181,7 +181,7 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
+    opacity: 0.1;
     color: black;
 
     -webkit-font-smoothing: antialiased;
