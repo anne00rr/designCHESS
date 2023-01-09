@@ -607,6 +607,13 @@ footer {
 @media screen and (min-width:1800px) {
     body {font-size: 18px;}
     }
+    .top-bubble {
+        margin-top: 50px;
+        height: 3000px;
+    }
+    .bg-call {
+        padding-top: 3400px;
+    }
 
     /* Min Font Size */
 @media screen and (max-width:1024px) {
@@ -717,6 +724,10 @@ footer {
             padding-left: 110vw;
             z-index: 99;
             mix-blend-mode :normal;
+            color: #5c7547
+        }
+        .bubble-wrap .detail_t {
+            color: #5c7547;
         }
 
         .top-bubble {
