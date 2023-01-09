@@ -3,6 +3,7 @@ body {
 }
 
 main {
+    padding-top: 100px;
     width: 100vw;
     margin: 0 auto;
 }
