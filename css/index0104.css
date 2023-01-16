@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     font-family: gotham;
-    list-style: none;
+    /* list-style: none; */
     text-align: center;
     color: #5c7547;  
 }
@@ -81,8 +81,9 @@ div[class=detail], div[class=detail]>a {
 }
 
 .detail button {
+    display: inline-block;
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
     border: 1px solid #96AF7D
 }
 
@@ -277,9 +278,7 @@ main .detail button:last-of-type {
     margin-left: -100vw;
     border-radius: 50%;
     background: url(../img/chessimggr_bg22.png) no-repeat center;
-    background-position: 50% 50%;
     background-size: contain;
-    background-repeat: repeat-y;
     text-align: center;
     position: absolute;
     z-index: -10;
@@ -313,7 +312,9 @@ main .detail button:last-of-type {
   .top-bubble #name {
     margin-left: 30vw;
     padding-top: 50px;
-    color: #fff;
+    font-size: 50px;
+    color: #5c7547;
+    mix-blend-mode: multiply;
   }
 .colright {
     padding-top: 300px;
@@ -336,9 +337,11 @@ main .detail button:last-of-type {
     width: 400px;
     position: relative;
     color: #fff;
-    /* mix-blend-mode :luminosity; */
-    /* text-align: justify; */
-    /* font-size: 1.6rem; */
+  }
+
+  .top-bubble .detail li, .top-bubble .detail a{
+    text-align: left;
+    color: #fff;
   }
   .top-bubble .detail:last-of-type {
     padding-top: 2vw;
@@ -667,6 +670,7 @@ footer {
     #quotes h3 {
         font-size: 36px;
     }
+    
     /* 워크 */
     #work {
         margin-top: 400px;
@@ -716,13 +720,11 @@ footer {
     @media screen and (max-width:500px) {
         
         .detail, button{
-            font-size: 11.2px;
+            font-size: 10px;
         }
         main .detail {
             width: 250px;
             margin-top: 50px;
-            /* text-align: justify;
-            letter-spacing: .05px; */
         }
 
         #quotes {
@@ -741,6 +743,7 @@ footer {
             left: 25%;
             top: 80vw;
         }
+        
         .bubble-wrap .col50:last-of-type {
             background-color: rgba(255,255,255,.5);
             background-image: none;
@@ -753,7 +756,10 @@ footer {
             padding-left: 110vw;
             z-index: 99;
             mix-blend-mode :normal;
-            color: #5c7547
+            color: #5c7547;
+        }
+        .bubble-wrap .detail li {
+            color: #5c7547;
         }
         .bubble-wrap .detail button {
             border: 1px solid #5c7547;

@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #f8d5b8;
+    background-color: #476a30;
     position: relative;
     }
 
@@ -92,6 +92,9 @@ h1 .logo {
 .col60 {
     position: relative;
 }
+.col60>a {
+    animation: none;
+}
 #trigger {
     display: block;
     z-index: 9999;
@@ -114,7 +117,10 @@ nav {
     z-index: 9999;
     background: #fff;
 }
-
+nav img {
+    margin-top: 1.5vw;
+    animation: Rotate 10s linear infinite;
+}
 .btn {
     display: block;
     width: 80px;
@@ -163,7 +169,7 @@ nav {
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #476a30;
+    /* background-color: #476a30; */
     display: flex;
   }
   .work-line {
@@ -173,7 +179,7 @@ nav {
     transition: transform .2s cubic-bezier(.269,  .182,  0,  .984), -webkit-transform .2s cubic-bezier(.269,  .182,  0,  .984);
     font-family: times;
     color: #fff;
-    font-size: 4em;
+    font-size: 4vw;
     line-height: 1.2em;
     font-weight: 400;
   }
@@ -206,6 +212,7 @@ nav {
     color:#f8d5b8;
     text-align: left;
     margin-left: 30vw;
+    margin-top: 30px;
     font-size: 0.8em;
     animation: none;
   }
@@ -220,14 +227,14 @@ nav {
     bottom: 0;
     z-index: -2;
     overflow: hidden;
-    background-color: #476a30;
+    /* background-color: #476a30; */
   }
   .top-bubble-balck {
     width: 100vw;
     height: 120vw;
     margin-left: -100vw;
     border-radius: 50%;
-    background-color: #476a30;
+    /* background-color: #476a30; */
   }
 
 
@@ -236,13 +243,12 @@ nav {
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    /* margin-left: 30vw; */
 }
 div[class^="simg"] {
-    width: 20vw;
+    width: 15vw;
     height: 8vh;
     /* background: #000; */
-    margin-right: 10px;
+    margin: 0 10px;
     filter: grayscale(100%);
     background-size: contain;
 }
@@ -253,6 +259,7 @@ div[class^="simg"]:hover {
 .simg1 {
     background: url(../img/Frame\ 2.png) no-repeat center;
 }
+
 .simg2 {
     background: url(../img/Frame\ 3.png) no-repeat center;
 }
@@ -275,7 +282,7 @@ div[class^="simg"]:hover {
     background: url(../img/Frame\ 9.png) no-repeat center;
 }
 .simg9 {
-    background: url(../img/Frame\ 2.png) no-repeat center;
+    background: url(../img/Frame\ 10.png) no-repeat center;
 }
 
 /* 폰트정의 */
@@ -317,7 +324,7 @@ div[class^="simg"]:hover {
     }
 }
 
-@keyframes rotate {
+@keyframes Rotate {
     to {
         rotate: 360deg;
     }
