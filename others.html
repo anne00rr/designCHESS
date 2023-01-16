@@ -34,7 +34,7 @@
           <p class="btn"><a href="workIndex.html">works</a></p>
           <p class="btn"><a href="others.html">others</a></p>
           <p class="btn"><a href="contact.html">contact</a></p>
-          <div><img src="img/logoC.png" alt="logo"></div>
+          <div><a href="index.html"><img src="img/logoC.png" alt="logo"></a></div>
       </nav>
 
         <div id="btn_up">
@@ -146,7 +146,7 @@
         
         <!-- 세로슬라이더 -->
         <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
         <script>
             console.clear();
 
@@ -263,13 +263,13 @@
             imgDetail.toggle();
             bigP.setAttribute("src",newSrc);
         });
-      }); -->
-//       for ( var i = 0; i < simg.length; i++ )
-//       simg[i].addEventListener("click", function () {
-//         imgDetail.fadeToggle();
-//         big.setAttribute("src", this.getAttribute("src"));
+      });
+      for ( var i = 0; i < simg.length; i++ )
+      simg[i].addEventListener("click", function () {
+        imgDetail.fadeToggle();
+        big.setAttribute("src", this.getAttribute("src"));
 
-// });
+}); -->
      
     </script>
 

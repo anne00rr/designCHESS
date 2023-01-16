@@ -10,7 +10,7 @@
     <link rel="Shortcut Icon" href="img/favicon.ico">
     <title>- design CHESS - Nari's web</title>
 </head>
-<body>
+<body id="bodycolor">
     <div class="cursor"></div>
     <div id="wrap">
         <div id="trigger" class="nav-link">
@@ -21,7 +21,7 @@
             <p class="btn"><a href="workIndex.html">works</a></p>
             <p class="btn"><a href="others.html">others</a></p>
             <p class="btn"><a href="contact.html">contact</a></p>
-            <div><img src="img/logoC.png" alt="logo"></div>
+            <div><a href="index.html"><img src="img/logoC.png" alt="logo"></a></div>
         </nav>
 
     <div class="dialog-wrapper">
@@ -85,7 +85,48 @@
           easing: 'ease-in-out-sine'
         });
     </script>
-    
+    <!-- 백그라운드 호버컬러지정 -->
+    <script>
+        let img1 = document.querySelector('.simg1').addEventListener('mouseover');
+        let img2 = document.querySelector('.simg2');
+        let img3 = document.querySelector('.simg3');
+        let img4 = document.querySelector('.simg4');
+        let img5 = document.querySelector('.simg5');
+        let img6 = document.querySelector('.simg6');
+        let img7 = document.querySelector('.simg7');
+        let img8 = document.querySelector('.simg8');
+        let img9 = document.querySelector('.simg9');
+        let bg = document.querySelector('body');
+
+        img1.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#F4B29C';
+        });
+        img2.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#020206';
+        });
+        img3.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#000000';
+        });
+        img4.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#80AB53';
+        });
+        img5.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#60391B';
+        });
+        img7.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#000000';
+        });
+        img8.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#9FD1FF';
+        });
+        img9.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#D8A6FF';
+        });
+
+        this.addEventListener('mouseout', function(){
+            bg.style.backgroundColor = '';
+        });
+    </script>
 <!-- 마우스 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script>
