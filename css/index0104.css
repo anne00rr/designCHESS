@@ -304,7 +304,7 @@ main .detail button:last-of-type {
 
 
   .top-bubble .col50:last-of-type {
-    background:url(../img/bgGra.png) top;
+/*     background:url(../img/bgGra.png) top; */
     background-size: contain;
     height: 600px;
 
