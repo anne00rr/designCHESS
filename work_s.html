@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/workIndex.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="Shortcut Icon" href="img/favicon.ico">
+    <title>- design CHESS - Nari's web</title>
+</head>
+<body id="bodycolor">
+    <div class="cursor"></div>
+    <div id="wrap">
+        <div id="trigger" class="nav-link">
+            <a href="#"><img src="img/menu2.png" alt="menu"></a>
+        </div>
+        <nav>
+            <p class="btn"><a href="about.html">about</a></p>
+            <p class="btn"><a href="workIndex.html">works</a></p>
+            <p class="btn"><a href="others.html">others</a></p>
+            <p class="btn"><a href="contact.html">contact</a></p>
+            <div><a href="index.html"><img src="img/logoC.png" alt="logo"></a></div>
+        </nav>
+
+    <div class="dialog-wrapper">
+        <div class="bubble-wrap-menu">
+            <div class="top-bubble-balck"></div>
+        <div>
+            <!-- <div class="nav-link">Close</div> -->
+        </div>
+    </div>
+    <div class="flex-columns no-margings">
+        
+        <div class="col60">
+            
+            <a href="index.html" class="link menu shuffle w-inline-block"><h1><div class="logo">design<br/>CHESS</div></h1></a>
+            <div class="spacer-1em"></div>
+            <a href="detailpage.html" class="work-line w-inline-block"><div class="menu-item-txt">/Detail Page</div></a>
+          
+            <a href="https://youtu.be/7ynjjtqKCKI" class="work-line w-inline-block"><div class="menu-item-txt">/Brandign video</div></a>
+
+            
+            <div class="subContact"></div>
+            <a href="#" target="_blank" class="link menu w-inline-block"><div>E-mail</div></a>
+            <!-- <a href="#" target="_blank" class="link menu w-inline-block"><div>Notion</div></a> -->
+            <a href="#" target="_blank" class="link menu w-inline-block"><div>Github</div></a>
+            <a href="#" target="_blank" class="link menu w-inline-block"><div>instagram</div></a>
+        </div>
+        <p onclick="history.back()">- Back to the page -</p>
+    </div>
+    </div>
+
+
+    <div class="bg-wordmark">
+        <!-- <div class="text-block-6">Work/work/work</div> -->
+    </div>
+
+
+
+
+
+
+
+    <!-- 스크립트 -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+    </script>
+    <!-- 백그라운드 호버컬러지정 -->
+    <script>
+        let img1 = document.querySelector('.simg1');
+        let img2 = document.querySelector('.simg2');
+        let img3 = document.querySelector('.simg3');
+        let img4 = document.querySelector('.simg4');
+        let img5 = document.querySelector('.simg5');
+        let img6 = document.querySelector('.simg6');
+        let img7 = document.querySelector('.simg7');
+        let img8 = document.querySelector('.simg8');
+        let img9 = document.querySelector('.simg9');
+        let bg = document.querySelector('body');
+
+        img1.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#F4B29C';
+        });
+        img2.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#020206';
+        });
+        img3.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#000000';
+        });
+        img4.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#80AB53';
+        });
+        img5.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#60391B';
+        });
+        img7.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#000000';
+        });
+        img8.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#9FD1FF';
+        });
+        img9.addEventListener('mouseover', function(){
+            bg.style.backgroundColor = '#D8A6FF';
+        });
+
+        this.addEventListener('mouseout', function(){
+            bg.style.backgroundColor = '';
+        });
+    </script>
+<!-- 마우스 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script>
+    // 선택자
+    const cursor = document.querySelector(".cursor");
+    const contentEm = document.querySelectorAll(".contents");
+    // const infoLi = document.querySelectorAll(".info.bottom li");
+
+    // 움직임 효과
+    document.addEventListener("mousemove", function(e){
+        gsap.to(cursor, {duration: 0.01, left: e.pageX, top: e.pageY});
+    });
+
+    // 오버 효과
+    contentEm.forEach(elem => {
+        elem.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+        });
+        elem.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+        });
+    });
+</script>
+
+<!-- 인덱스 -->
+<script>
+    $(function(){
+    let trigger = $('#trigger');
+    let menu = $('nav');
+
+    $('#trigger').on('click',function(e){
+        e.preventDefault();
+        menu.slideToggle();
+    });
+    });
+</script>
+    
+    <!-- 애니메이션 소스 -->
+    <script src="js/animation.js" type="text/javascript">
+    </script>
+</body>
+</html>
